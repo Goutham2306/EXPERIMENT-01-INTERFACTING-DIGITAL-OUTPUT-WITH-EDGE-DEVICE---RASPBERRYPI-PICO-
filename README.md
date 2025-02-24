@@ -1,4 +1,4 @@
-# EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PICO)
+![image](https://github.com/user-attachments/assets/ed8a4d11-7c2b-4bcf-a88b-e90f7f38e1c9)# EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PICO)
 ### NAME 
 ### DEPARTMENT 
 ### ROLL NO 
@@ -40,22 +40,69 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 
 
 ## PROGRAM (MicroPython)
+1)
 ```
+from machine import Pin
+from utime import sleep
 
 
- 
+print("Hello, Pi Pico!")
 
 
+led = Pin(0, Pin.OUT)
+while True:
+    led.toggle()
+    sleep(0.5)
+```
+2)
+```
+from machine import Pin
+from utime import sleep
+led1 = Pin(0,Pin.OUT)
+led2 =Pin(2,Pin.OUT)
+led3 =Pin(28,Pin.OUT)
 
- 
-````
+while True:
+    led1.toggle()
+    sleep(1)
+    led2.toggle()
+    sleep(1.1)
+    led3.toggle()
+    sleep(1.2)
+```
+3)
+```
+from machine import Pin
+from utime import sleep
+led1 = Pin(0,Pin.OUT)
+led2 =Pin(2,Pin.OUT)
+led3 =Pin(28,Pin.OUT)
+buzz=Pin(3,Pin.OUT)
+while True:
+    led1.toggle()
+    sleep(1)
+    buzz.toggle()
+    sleep(1)
+    led2.toggle()
+    sleep(1.1)
+    buzz.toggle()
+    sleep(1.1)
+    led3.toggle()
+    sleep(1.2)
+    buzz.toggle()
+    sleep(1.2)
+```
 
 ### OUPUT  
 
 
 # FIGURE -02 ADD TITILE HERE 
+![image](https://github.com/user-attachments/assets/a206f0dc-d321-428e-9234-9661fa6d88e6)
 
-#  FIGURE -03 ADD TITILE HERE 
+
+#  FIGURE -03 ADD TITILE HERE
+![image](https://github.com/user-attachments/assets/686c309e-0b50-490a-962a-cebdf7f8f895)
+
 
 # FIGURE -04 ADD TITLE HERE 
 
