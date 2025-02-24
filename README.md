@@ -1,8 +1,8 @@
-![image](https://github.com/user-attachments/assets/ed8a4d11-7c2b-4bcf-a88b-e90f7f38e1c9)# EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PICO)
-### NAME 
-### DEPARTMENT 
-### ROLL NO 
-### DATE OF EXPERIMENT 
+
+### NAME : GOUTHAM.K
+### DEPARTMENT : CSE(IOT)
+### ROLL NO :212223110019
+### DATE OF EXPERIMENT : 24/02/2025
 
 ### AIM
 To interface a digital output device (LED) with the Raspberry Pi Pico and control it using MicroPython.
@@ -40,7 +40,7 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 
 
 ## PROGRAM (MicroPython)
-1)
+# 1)SINGLE LED BLINK
 ```
 from machine import Pin
 from utime import sleep
@@ -54,7 +54,7 @@ while True:
     led.toggle()
     sleep(0.5)
 ```
-2)
+# 2)3 LED'S BLINK
 ```
 from machine import Pin
 from utime import sleep
@@ -70,7 +70,7 @@ while True:
     led3.toggle()
     sleep(1.2)
 ```
-3)
+# 3) LED'S with BUZZER
 ```
 from machine import Pin
 from utime import sleep
@@ -96,16 +96,17 @@ while True:
 ### OUPUT  
 
 
-# FIGURE -02 ADD TITILE HERE 
+# FIGURE -023 SINGLE LED BLINK
 ![image](https://github.com/user-attachments/assets/a206f0dc-d321-428e-9234-9661fa6d88e6)
 
 
-#  FIGURE -03 ADD TITILE HERE
+#  FIGURE -03 3 LED'S BLINK
 ![image](https://github.com/user-attachments/assets/686c309e-0b50-490a-962a-cebdf7f8f895)
 
 
-# FIGURE -04 ADD TITLE HERE 
+# FIGURE -04 LED'S with BUZZER
 
+![image](https://github.com/user-attachments/assets/45a42b8f-b9cf-4b9f-ba3b-421c934f0e35)
 
  
 ## RESULTS
